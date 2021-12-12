@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">     
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+<style type=text/css>
+body   
+{  
+height: max-content;   
+background-size: cover;
+font-family: 'Raleway', sans-serif;
+box-sizing: border-box; 
+} 
+header 
+{  
+background-color: white;  
+position: fixed;  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 30px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;
+font-family: 'Montserrat', sans-serif;  
+}  
+header * 
+{  
+display: inline;  
+}  
+header li 
+{  
+margin: 20px;  
+}  
+header li a 
+{  
+color: grey;  
+text-decoration: none;  
+}
+div.form
+{
+width: 100%;
+height: 100vh;
+background-image: url(https://user-images.githubusercontent.com/95999394/145705776-cdd04a83-4237-4bbd-b59b-fab86e5bc1c8.jpg);
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+form
+{
+width: 90%;
+max-width: 600px;
+} 
+div.my-form 
+{
+margin-bottom: 30px;
+position: relative;
+}
+input, textarea
+{
+width: 100%;
+padding: 10px;
+outline: 0;
+border: 1px solid white;
+color: white;
+background: transparent;
+font-size: 15px;
+} 
+label
+{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: whitesmoke;
+    cursor: text;
+    transition: 0.2s;
+}
+button
+{
+    padding: 10px 0;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Corinthia', cursive;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -35px;
+    font-size: 14px;
+
+}
+</style>
+</head>
+<body>
+    <header>  
+        <nav><b>  
+        <ul>  
+        <li>  
+        <a href="LoremIpsum.html">Home</a>  
+        </li>  
+        <li>  
+        <a href="#">About</a>  
+        </li>  
+        <li>  
+        <a href="#">Team</a>  
+        </li>  
+        <li> 
+        <a href="Gallery.html">Gallery</a>  
+        </li>  
+        <li>  
+        <a href="Contact.html">Contact</a>  
+        </li>  
+        </ul>  
+        </b></nav>  
+        </header>
+    <div class="form"><b>
+        <form>
+            <div class="my-form">
+            <input type="text" id="name" required>
+            <label for="name">Name</label>
+            </div>
+
+            <div class="my-form">
+            <input type="text" id="email" required>
+            <label for="email">Email Id</label>
+            </div>
+
+            <div class="my-form">
+            <input type="text" id="subject" required>
+            <label for="subject">Subject</label>
+            </div>
+
+            <div class="my-form">
+            <textarea id="message" rows="8" required></textarea>
+            <label for="message">Type Your Message...</label>
+            </div>
+        
+            <button type="submit">SEND</button>
+        </b></form>
+    </div>
+</body>
+</html>
